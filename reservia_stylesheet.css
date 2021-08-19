@@ -16,7 +16,7 @@ main{
     margin:0 5rem 3rem 5rem;
 }
 
-nav ul{
+#navul{
     border: 3px magenta solid;
     display: block;
     display: flex;
@@ -26,7 +26,7 @@ nav ul{
     margin: auto;
 }
 
-nav li{
+.navli{
     list-style-type: none;
     padding: 2px;
     margin: 2px;
@@ -36,44 +36,32 @@ nav li{
 
 #recherche{
     display: flex;
-    justify-content: flex-start;
+    
 }
 
 .icon_recherche{
-    display: flex;
-    flex-wrap: wrap;
-    border: 2px #F2F2F2 solid;
+    border: 3px pink solid; 
     border-top-left-radius: 1rem; 
     border-bottom-left-radius: 1rem;
     background-color: #F2F2F2;
-    height: 3rem;
-    width: 3rem;
-    align-items: center;
-    justify-content: center;
-
-
+    padding: 1rem 1rem 1rem 1rem;
+    display: inline;
 }
 
 .text_recherche{
-    display: flex;
-    display: inline-block;
     text-align: justify;
     border: 2px #F2F2F2 solid;
     width: auto;
     height: 3rem;
-    margin: none;
+    margin: 0 -0.25rem 0 -0.25rem;
     padding: 0 0 0 1rem;
     background-color : white;
     color : #000;
     font-size: medium;
     font-weight: bold;
-
-
 }
 
 .button_recherche{
-    display: flex;
-    display: inline-block;
     text-align: center;
     border: 3px #0065FC solid;
     border-top-right-radius: 1rem;
@@ -87,21 +75,21 @@ nav li{
     font-size: medium;
 }
 
-section ul{
+
+#liste_filtre{
     display: block;
     display: flex;
     padding: auto;
     margin: auto;
-    }
-    
-section li{
-    list-style-type: none;
-    padding: 2px;
-    margin: 2px;
-    font-weight: bold;
-    
 }
 
+.titre_filtre{
+    border: 3px solid yellow;
+    display: flex;
+    width: 5%;
+    align-items: center;
+    justify-content: center;  
+}
 
 .filtres{
     display: flex;
@@ -116,8 +104,6 @@ section li{
     font-weight: bold;
     text-align: right;
     font-size: medium;
-    
-
 }
 
 
@@ -149,13 +135,6 @@ section li{
 }
 
 
-section aside, article, h2, .carte_populaire{ /*remettre au bon endroit*/
-    display : inline-block;
-    vertical-align : top;
-    text-align : justify;
-    height: 50%;
-
-}
 
 article{
     width: 50rem;
@@ -169,7 +148,7 @@ article{
 article h2{
     border: 3px blue solid;
     position: relative;
-    width: 50%;
+    width: 100%;
     margin-left: 2.5rem;
 }
 
@@ -181,17 +160,17 @@ article a{
 }
 
 #cartes_hebergement{
+    display: flex;
     background-color: #F2F2F2;
     border-radius: 20px;
-    width: auto;
+    width: 100%;
     height: 100%;
 }
 
 .carte_hebergement{
     border-radius: 10px;
     box-shadow: 2px 2px 2px rgb(156, 152, 152);
-    width: 15rem;
-    height: 40%;
+    width: 30%;
     font-size: small;
     padding: 3px 3px 3px 3px;
 }
@@ -358,7 +337,7 @@ aside figure img{/*images aside*/
 
 
 
-section2 figure img{/*bon nom choisi ?*/
+.section2 figure img{/*bon nom choisi ?*/
     width: 100%;
     height: 4rem;
     object-fit: cover;
@@ -369,8 +348,10 @@ section2 figure img{/*bon nom choisi ?*/
 
 footer{
     background-color: #F2F2F2;
-    margin: none;
-    padding: none;
+}
+
+.section2 h2{
+    width: 100%;
 }
 
 h1 h2{

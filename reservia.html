@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="reservia_stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="reservia_stylesheet.css" />
     <!--indicate the CSS link-->
     <title>Reservia</title>
     <script src="https://kit.fontawesome.com/fa1ca87cd4.js" crossorigin="anonymous"></script>
@@ -15,12 +15,12 @@
     <header>
 
         <nav>
-            <ul>
-                <li><a href="#hebergements">Hébergements</a></li>
+            <ul id="navul">
+                <li class="navli"><a href="#hebergements">Hébergements</a></li>
                 <!--ancre-->
-                <li><a href="#activites">Activités</a></li>
+                <li class="navli"><a href="#activites">Activités</a></li>
                 <!--ancre-->
-                <li><a href="#">S'inscrire</a></li>
+                <li class="navli"><a href="#">S'inscrire</a></li>
                 <!--lien factice-->
             </ul>
         </nav>
@@ -35,24 +35,22 @@
     <!--#endregion-->
 
     <main>
-        <section>
+        <section id="section1">
             <!--#region [ rgba(0, 0, 250, 0.1) ]-->
             <div id="recherche">
                 <form method="post" action="traitement.php">
                     <!--barre de recherche-->
-                    <p>
-                        <i class="fas fa-map-marker-alt icon_recherche"></i>
-                        <!--icone-->
-                        <input type="text" name="Marseille, France" id="Marseille, France" value="Marseille, France"
-                            class="text_recherche" autofocus />
-                        <!--autofocus peut être pas necessaire-->
-                        <label for="Marseille, France"></label>
-                        <input type="submit" value="Rechercher" class="button_recherche" />
-                    </p>
+                    <i class="fas fa-map-marker-alt icon_recherche"></i>
+                    <!--icone-->
+                    <input type="text" name="Marseille, France" id="Marseille, France" value="Marseille, France"
+                        class="text_recherche" autofocus />
+                    <!--autofocus peut être pas necessaire-->
+                    <label for="Marseille, France"></label>
+                    <input type="submit" value="Rechercher" class="button_recherche" />
                 </form>
             </div>
-            <ul>
-                <li>Filtres</li>
+            <ul id="liste_filtre">
+                <li class="titre_filtre">Filtres</li>
                 <li class="filtres"><i class="fas fa-money-bill-wave icon"></i>Économique</li>
                 <li class="filtres"><i class="fas fa-child icon"></i>Familial</li>
                 <li class="filtres"><i class="fas fa-heart icon"></i>Romantique</li>
@@ -204,7 +202,7 @@
         </section>
 
         <!--#region [ rgba(0, 150, 150, 0.1) ]-->
-        <section2>
+        <section class="section2">
 
             <div id="cartes_activites">
 
@@ -254,7 +252,7 @@
 
             </div>
 
-        </section2>
+        </section>
     </main>
     <!--#endregion-->
 
