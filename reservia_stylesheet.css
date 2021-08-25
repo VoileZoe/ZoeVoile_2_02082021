@@ -34,13 +34,20 @@ main{
 
 }
 
+#section1{/*attention essaie à effacer !!!!!!!*/
+    border: 3px solid green;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    width: 100%;
+}
+
 #recherche{
-    display: flex;
+    border: 3px solid red;
     
 }
 
 .icon_recherche{
-    border: 3px pink solid; 
     border-top-left-radius: 1rem; 
     border-bottom-left-radius: 1rem;
     background-color: #F2F2F2;
@@ -50,9 +57,8 @@ main{
 
 .text_recherche{
     text-align: justify;
-    border: 2px #F2F2F2 solid;
-    width: auto;
-    height: 3rem;
+    border: 3px #F2F2F2 solid;
+    height: 85%;
     margin: 0 -0.25rem 0 -0.25rem;
     padding: 0 0 0 1rem;
     background-color : white;
@@ -63,24 +69,26 @@ main{
 
 .button_recherche{
     text-align: center;
-    border: 3px #0065FC solid;
+    border: 3px solid #0065FC;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    width: auto;
-    height: 3rem;
-    margin: none;
-    padding: none;
+    height: 90%;
     background-color :#0065FC;
     color :white;
     font-size: medium;
+    padding: 1rem 1rem 1rem 1rem;
 }
 
 
+
 #liste_filtre{
-    display: block;
+    border: 3px solid cyan;
     display: flex;
-    padding: auto;
-    margin: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 10rem;
+
 }
 
 .titre_filtre{
@@ -110,7 +118,6 @@ main{
 .icon{
     display:flex;
     text-align: center;
-    border:0px #DEEBFF solid;
     border-radius: 50%;
     color: #0065FC;
     background-color: #DEEBFF;
@@ -121,6 +128,10 @@ main{
     font-size: medium;
     font-weight: bold;
     margin-right: 1rem;
+}
+
+.infos{
+    border: 3px solid purple;
 }
 
 .icon_i{

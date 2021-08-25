@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="reservia_stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="reservia_stylesheet2.css" />
     <!--indicate the CSS link-->
     <title>Reservia</title>
     <script src="https://kit.fontawesome.com/fa1ca87cd4.js" crossorigin="anonymous"></script>
@@ -15,19 +15,19 @@
     <header>
 
         <nav>
-            <ul id="navul">
-                <li class="navli"><a href="#hebergements">Hébergements</a></li>
+            <ul id="navbar">
+                <li class="navitem"><a href="#hebergements">Hébergements</a></li>
                 <!--ancre-->
-                <li class="navli"><a href="#activites">Activités</a></li>
+                <li class="navitem"><a href="#activites">Activités</a></li>
                 <!--ancre-->
-                <li class="navli"><a href="#">S'inscrire</a></li>
+                <li class="navitem nav_inscrire"><a href="#">S'inscrire</a></li>
                 <!--lien factice-->
             </ul>
         </nav>
 
-        <p><img src="images/Reservia.svg" alt="logo reservia" /></p>
+        <p><img src="images/Reservia.svg" alt="logo reservia" class="icon_reservia"/></p>
 
-        <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 
         <p>En plein centre ville ou en pleine nature</p>
         <!--Logo Reservia-->
@@ -49,26 +49,25 @@
                     <input type="submit" value="Rechercher" class="button_recherche" />
                 </form>
             </div>
-            <ul id="liste_filtre">
-                <li class="titre_filtre">Filtres</li>
-                <li class="filtres"><i class="fas fa-money-bill-wave icon"></i>Économique</li>
-                <li class="filtres"><i class="fas fa-child icon"></i>Familial</li>
-                <li class="filtres"><i class="fas fa-heart icon"></i>Romantique</li>
-                <li class="filtres"><i class="fas fa-dog icon"></i>Animaux autorisés</li>
+            <ul id="list_filtre">
+                <li class="title_filtre">Filtres</li>
+                <li class="item_filtre"><i class="fas fa-money-bill-wave icon"></i>Économique</li>
+                <li class="item_filtre"><i class="fas fa-child icon"></i>Familial</li>
+                <li class="item_filtre"><i class="fas fa-heart icon"></i>Romantique</li>
+                <li class="item_filtre"><i class="fas fa-dog icon"></i>Animaux autorisés</li>
             </ul>
-            <p><a href="#"><i class="fas fa-info icon_i"></i></a>Plus de 500 logements sont disponibles dans cette ville
-            </p>
+            <p id="infos"><i class="fas fa-info icon_i"></i>Plus de 500 logements sont disponibles dans cette ville</p>
 
             <!--Ajouter les filtres-->
         </section>
         <!--#endregion-->
 
-        <section>
+        <section id="section2">
 
             <!--#region [ rgba(0, 250, 30, 0.1) ]-->
             <article>
 
-                <div id="cartes_hebergement">
+                <div id="containeur_hebergement">
 
                     <h2 id="hebergements">Hébergements à Marseille</h2>
                     <!--intégrer le titre dans ma div au dessus de mes cartes-->
@@ -78,8 +77,8 @@
                         <figcaption>
                             <h3>Auberge La Cannebière</h3>
                             <p>Nuit à partir de <strong>25€</strong><br />
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i
+                                    class="fas fa-star blue-star"></i><i class="fas fa-star grey-star"></i>
                             </p>
                         </figcaption>
                         <!--ajouter les étoiles-->
@@ -90,8 +89,8 @@
                         <figcaption>
                             <h3>Hôtel du port</h3>
                             <p>Nuit à partir de 52<strong>€</strong><br />
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i
+                                    class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i>
                             </p>
                         </figcaption>
                         <!--ajouter les étoiles-->
@@ -102,8 +101,8 @@
                         <figcaption>
                             <h3>Hôtel Les mouettes</h3>
                             <p>Nuit à partir de 76<strong>€</strong><br />
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i
+                                    class="fas fa-star blue-star"></i><i class="fas fa-star grey-star"></i>
                             </p>
                         </figcaption>
                         <!--ajouter les étoiles-->
@@ -114,8 +113,8 @@
                         <figcaption>
                             <h3>Hôtel de la mer</h3>
                             <p>Nuit à partir de 46<strong>€</strong><br />
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i
+                                    class="fas fa-star grey-star"></i><i class="fas fa-star grey-star"></i>
                             </p>
                         </figcaption>
                         <!--ajouter les étoiles-->
@@ -126,8 +125,8 @@
                         <figcaption>
                             <h3>Auberge Le Panier</h3>
                             <p>Nuit à partir de 23<strong>€</strong><br />
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i
+                                    class="fas fa-star blue-star"></i><i class="fas fa-star grey-star"></i>
                             </p>
                             <!--ajouter les étoiles-->
                         </figcaption>
@@ -138,24 +137,24 @@
                         <figcaption>
                             <h3>Hôtel chez Amina</h3>
                             <p>Nuit à partir de 96<strong>€</strong><br />
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i
+                                    class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i>
                             </p>
                         </figcaption>
                         <!--ajouter les étoiles-->
                     </figure>
 
-                    <a href="#">Afficher plus</a>
+                    <p class="viewmore">Afficher plus</p>
                 </div>
             </article>
             <!--#endregion-->
 
             <!--#region [ rgba(150, 150, 150, 0.1) ]-->
-            <aside>
+            <aside id="pop_aside">
                 <div class="pop_title_icon">
                     <h2>Les plus populaires</h2>
 
-                    <i class="fas fa-chart-line icon_chart"></i>
+                    <i class="fas fa-chart-line"></i>
                 </div>
                 <!--icone flèche-->
 
@@ -202,7 +201,7 @@
         </section>
 
         <!--#region [ rgba(0, 150, 150, 0.1) ]-->
-        <section class="section2">
+        <section id="section3">
 
             <div id="cartes_activites">
 
