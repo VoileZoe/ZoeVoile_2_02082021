@@ -16,23 +16,30 @@ main{
     margin:0 3rem 3rem 3rem;
 }
 
-#navbar{
-    display: block;
+#header{
     display: flex;
-    float: right;
+    justify-content: space-between;
+}
+
+#icon_navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header ul{
+    display: flex;
     list-style-type: none;
 }
 
 .navitem{
     padding: 2rem 0 2rem 4rem;
-
-
 }
 
 .navitem a{
     text-decoration: none;
+    color: black;
 }
-
 
 .navitem :hover{
     color: #0065FC;
@@ -41,15 +48,13 @@ main{
     
 }
 
-
 .nav_inscrire a{
-    font-weight: 600;
+    font-weight: bold;
     color: #0065FC;
 }
 
 .icon_reservia{
     display:block;
-    display: flex;
     padding: 2rem 0 2rem 0;
 }
 
@@ -95,6 +100,10 @@ header h1{
     font-size: medium;
 }  
 
+.fa-search{
+    display: none !important; 
+}
+
 #list_filtre{
     display: flex;
     flex-wrap: wrap;
@@ -107,6 +116,19 @@ header h1{
     margin: 2rem 0 2rem 0;
 
 }
+
+#list_filtre a{
+    text-decoration: none;
+    color: black;
+}
+
+#list_filtre a:hover{
+    font-size: x-large;
+    border-radius: 10rem;
+    box-shadow: 6px 6px 10px #F2F2F2;
+    color: #0065FC;
+}
+
 
 .title_filtre{
     margin-left: -2.5rem; 
@@ -166,14 +188,14 @@ header h1{
 
 }
 
-#containeur_hebergement{
+#container_hebergement{
     border-radius: 25px;
     background-color: #F2F2F2;
     width: 60%;
     padding: 40px 40px 20px 40px;
 }
 
-#containeur_hebergement h2{
+#container_hebergement h2{
     font-size: x-large;
     font-weight: 600;
     width: 100%;
@@ -275,7 +297,6 @@ font-size: medium;
 
 .fa-chart-line{
     display: inline-block;
-    float: right;
     width: 2rem;
     height: 2rem;
     font-size: 25px;
@@ -291,6 +312,8 @@ font-size: medium;
     padding: 4px;
     margin-bottom: 2rem;
     font-size: small;
+    text-decoration: none;
+    color: black;
 }
 
 .pop_card img{
@@ -332,7 +355,6 @@ strong{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
     margin-top: 2rem;
 }
 
@@ -352,6 +374,8 @@ strong{
     box-shadow: 4px 4px 6px #dad9d9;
     width: 20%;
     font-size: medium;
+    text-decoration: none;
+    color: black;
 }
 
 .carte_activite_1 img{
@@ -378,6 +402,8 @@ strong{
     height: 50%;
     font-size: medium;
     margin-bottom: 3rem;
+    text-decoration: none;
+    color: black;
 }
 
 .carte_activite_2 img{
@@ -396,6 +422,8 @@ strong{
     width: 100%;
     height: 40%;
     font-size: medium;
+    text-decoration: none;
+    color: black;
 }
 
 .carte_activite_3 img{
@@ -412,6 +440,8 @@ strong{
     box-shadow: 4px 4px 6px #dad9d9;
     width: 20%;
     font-size: medium;
+    text-decoration: none;
+    color: black;
 }
 
 .carte_activite_4 img{
@@ -437,6 +467,8 @@ strong{
     height: 40%;
     font-size: medium;
     margin-bottom: 3rem;
+    text-decoration: none;
+    color: black;
 }
 
 .carte_activite_5 img{
@@ -455,6 +487,8 @@ strong{
     width: 100%;
     height: 50%;
     font-size: medium;
+    text-decoration: none;
+    color: black;
 }
 
 .carte_activite_6 img{
@@ -489,5 +523,131 @@ footer{
     list-style-type: none;
     margin-left: -2.5rem;
     line-height: 30px;
+
+}
+
+
+@media screen and (min-device-width:320px) and (max-device-width:600px){
+   
+    html{
+        width: 100%;
+    }
+
+    header{
+        margin: 0 0 0 0;
+    }
+
+    main{
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+    #header{
+        flex-wrap: wrap;
+    }
+
+    .icon_reservia{
+        width: 7rem;
+        margin-left: 20px;
+        margin-top: -20px;
+    }
+
+    nav ul{
+        display: flex;
+        font-size: large;
+    }
+
+    header ul :nth-child(1){
+        margin-top: -70px;
+        margin-left: -30px;
+        order: 2;
+    }
+
+    header ul :nth-child(2){
+        margin-top: -70px;
+        margin-left: 40px;
+        order: 3; 
+    }
+
+    header ul :nth-child(3){
+        order: 1;
+        position: absolute;
+        top: 25px; 
+        right: 30px;
+    }
+
+    .nav_heb_act{
+        text-decoration: underline 5px;
+    }
+
+    .title_filtre{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    header h1{
+        border: 2px solid red;
+        width: 100%;
+        line-height: 48px !important;
+    }
+
+    #list_filtre{
+        width: 90%;
+        padding: 0;
+    }
+
+    .button_recherche{
+        border: 2px solid #0065FC;
+        width: 3.2rem;
+        height: 3.3rem;
+        padding: 1.3rem 0.8rem 1.1rem 1rem;
+    }
+
+    .fa-search{
+        display: initial !important;
+        width: 3rem;
+        height: 3rem;
+        color: red;
+        font-size: 25px;
+    }
+
+    .text_button_search{
+        display: none;
+    }
+
+    #section2{
+        border: 2px solid orange;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    #container_hebergement{
+        border: 2px solid green;
+        overflow: hidden;
+        width: 80%;
+        background-color: white;
+
+    }
+
+    #pop_aside{
+        border: 2px solid cyan;
+        overflow: hidden;
+        width: 80%;
+    }
+
+    #section3{
+        border: 2px solid red;
+        flex-direction: column;
+    }
+
+    footer{
+        flex-direction: column;
+        
+    }
+
+    .footer_category{
+        width: auto;
+    }
+
 
 }
