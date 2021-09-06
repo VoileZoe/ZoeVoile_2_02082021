@@ -33,22 +33,27 @@ header ul{
 }
 
 .navitem{
-    padding: 2rem 0 2rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    height: 7rem;
+    
 }
 
-.navitem a{
+.navitem{
     text-decoration: none;
     color: black;
 }
 
-.navitem :hover{
+header li :hover{
     color: #0065FC;
     border-top: 2px solid #0065FC;
-    padding-top: 2.5rem;
+    
     
 }
 
-.nav_inscrire a{
+.nav_inscrire{
     font-weight: bold;
     color: #0065FC;
 }
@@ -77,7 +82,7 @@ header h1{
     display: inline-block;
 }
 
-.text_recherche{
+#marseille_france{
     border: 2px solid #F2F2F2;
     text-align: center;
     padding: 1.1rem 1rem 0.9rem 1rem;
@@ -123,9 +128,7 @@ header h1{
 }
 
 #list_filtre a:hover{
-    font-size: x-large;
-    border-radius: 10rem;
-    box-shadow: 6px 6px 10px #F2F2F2;
+    font-size: large;
     color: #0065FC;
 }
 
@@ -158,12 +161,12 @@ header h1{
     margin-right: 1rem;
 }
 
-#infos{
+#info{
     display: flex;
 }
 
 
-.icon_i{
+.fa-info{
     color: #0065FC;
     border: 3px #F2F2F2 solid;
     border-radius: 50%;
@@ -172,6 +175,7 @@ header h1{
     font-size: 15px;
     text-align: center;
     line-height: 25px !important;
+    margin-top: 0.5rem;
     margin-right: 0.5rem;
 }
 
@@ -212,7 +216,7 @@ header h1{
 .carte_hebergement{
     border-radius: 20px;
     background-color: white;
-    box-shadow: 4px 4px 6px #dad9d9;
+    box-shadow: 0 0 10px 4px #dad9d9;
     width: 20rem;
     height: 15rem;
     padding: 4px;
@@ -305,7 +309,7 @@ font-size: medium;
 .pop_card{
     display: flex;
     border-radius: 20px;
-    box-shadow: 4px 4px 6px #dad9d9;
+    box-shadow: 0 0 10px 4px #dad9d9;
     background-color: white;
     width: 97%;
     height: 25%;
@@ -371,7 +375,7 @@ strong{
 .carte_activite_1{
     border-radius: 20px;
     background-color: white;
-    box-shadow: 4px 4px 6px #dad9d9;
+    box-shadow: 0 0 10px 4px #eee9e9;
     width: 20%;
     font-size: medium;
     text-decoration: none;
@@ -397,7 +401,7 @@ strong{
 .carte_activite_2{
     border-radius: 20px;
     background-color: white;
-    box-shadow: 4px 4px 6px #dad9d9;
+    box-shadow: 0 0 10px 4px #eee9e9;
     width: 100%;
     height: 50%;
     font-size: medium;
@@ -418,7 +422,7 @@ strong{
 .carte_activite_3{
     border-radius: 20px;
     background-color: white;
-    box-shadow: 4px 4px 6px #dad9d9;
+    box-shadow: 0 0 10px 4px #eee9e9;
     width: 100%;
     height: 40%;
     font-size: medium;
@@ -437,7 +441,7 @@ strong{
 .carte_activite_4{
     border-radius: 20px;
     background-color: white;
-    box-shadow: 4px 4px 6px #dad9d9;
+    box-shadow: 0 0 10px 4px #eee9e9;
     width: 20%;
     font-size: medium;
     text-decoration: none;
@@ -462,7 +466,7 @@ strong{
 .carte_activite_5{
     border-radius: 20px;
     background-color: white;
-    box-shadow: 4px 4px 6px #dad9d9;
+    box-shadow: 0 0 10px 4px #eee9e9;
     width: 100%;
     height: 40%;
     font-size: medium;
@@ -483,7 +487,7 @@ strong{
 .carte_activite_6{
     border-radius: 20px;
     background-color: white;
-    box-shadow: 4px 4px 6px #dad9d9;
+    box-shadow: 0 0 10px 4px #eee9e9;
     width: 100%;
     height: 50%;
     font-size: medium;
@@ -552,32 +556,56 @@ footer{
         margin-top: -20px;
     }
 
-    nav ul{
+    header ul{
         display: flex;
         font-size: large;
     }
 
     header ul :nth-child(1){
-        margin-top: -70px;
-        margin-left: -30px;
         order: 2;
+        width: 13.3rem;
+        margin-left: -1.5rem;
     }
 
     header ul :nth-child(2){
-        margin-top: -70px;
-        margin-left: 40px;
         order: 3; 
     }
 
     header ul :nth-child(3){
         order: 1;
         position: absolute;
-        top: 25px; 
-        right: 30px;
+        top: 40px;
+        right: 1px;
+        
     }
 
-    .nav_heb_act{
-        text-decoration: underline 5px;
+    header li :hover{
+        color: #0065FC;
+        border-top: hidden;
+        
+    }
+
+    .link_heb_act :hover{
+        border-bottom: 5px solid #0065FC;
+    }
+
+    .nav_heb{
+        border-bottom: 5px solid #F2F2F2;
+        margin-top: -4rem;
+        height: 4rem;
+    }
+
+    .nav_act{
+        border-bottom: 5px solid #F2F2F2;
+        margin-top: -4rem;
+        height: 4rem;
+    }
+
+    .nav_inscrire{
+        width:8rem !important;
+        height: 3rem;
+        justify-content: none !important;
+        
     }
 
     .title_filtre{
@@ -586,9 +614,16 @@ footer{
     }
 
     header h1{
-        border: 2px solid red;
-        width: 100%;
-        line-height: 48px !important;
+        width: 80%;
+        font-size: 25px;
+        padding-left: 1rem;
+    }
+
+    .sub_title{
+        width: 90%;
+        font-size: 20px;
+        padding-left: 1rem;
+
     }
 
     #list_filtre{
@@ -596,52 +631,178 @@ footer{
         padding: 0;
     }
 
+    form{
+        margin-left: 1rem;
+        margin-top: 2rem;
+    }
+
+    .icon_recherche {
+        padding: 1.15rem 0.9rem 1.05rem 1.1rem;
+        font-size: 20px;
+    }
+
+    #marseille_france {
+        width: 16rem;
+        font-size: 20px;
+    }
+
     .button_recherche{
-        border: 2px solid #0065FC;
-        width: 3.2rem;
-        height: 3.3rem;
-        padding: 1.3rem 0.8rem 1.1rem 1rem;
+        border-radius: 15px;
+        width: 3.7rem;
+        height: 3.7rem;
+        margin-left: -1rem;
     }
 
     .fa-search{
         display: initial !important;
         width: 3rem;
         height: 3rem;
-        color: red;
-        font-size: 25px;
+        color: white;
+        font-size: 20px;
     }
 
     .text_button_search{
         display: none;
     }
 
-    #section2{
-        border: 2px solid orange;
-        flex-direction: column-reverse;
-        width: 100%;
+    #list_filtre{
+        margin-left: 1rem;
+        line-height: 50px;
     }
 
-    #container_hebergement{
-        border: 2px solid green;
-        overflow: hidden;
-        width: 80%;
-        background-color: white;
+    .title_filtre{
+        font-size: 20px;
+    }
 
+    .item_filtre{
+        border: 3px solid #F2F2F2;
+        margin-bottom: 1rem;
+        font-size: 18px;
+    }
+
+    #info{
+        margin-left: 1rem;
+    }
+
+    #section2{
+        flex-direction: column-reverse;
+        width: 26.7rem;
+        margin-left: -0.5rem;
     }
 
     #pop_aside{
-        border: 2px solid cyan;
+        border: 2px solid #F2F2F2;
+        border-radius: 0;
         overflow: hidden;
-        width: 80%;
+        width: 87.5%;
+        padding: 1.5rem;
+    }
+
+    .pop_card{
+        height: 10rem;
+        padding: 6px;
+    }
+
+    .pop_card_texte{
+        margin: 0 2rem 1rem 1.5rem;
+    }
+
+    #container_hebergement{
+        overflow: hidden;
+        width: 87.5%;
+        background-color: white;
+        padding: 1.5rem;
+    }
+
+    .carte_hebergement{
+        box-shadow: 0 0 10px 4px #eee9e9;
+        width: 100%;
+    }
+
+    .viewmore{
+        font-size: 20px;
+        margin-bottom: 0;
     }
 
     #section3{
-        border: 2px solid red;
         flex-direction: column;
+        width: 92%;
+        margin-top: 0;
+        margin-left: -8px;
+        padding: 0 1.5rem 1.5rem 1.5rem;
+    }
+
+    .carte_activite_1{
+        width: 100%;
+        height: 13rem;
+        margin-bottom: 2rem;
+    }
+    
+    .carte_activite_1 img{
+        height: 70%;
+    }
+
+    #groupe2{
+        width: 100%;
+    }
+
+    .carte_activite_2{
+        width: 100%;
+        height: 13rem;
+        margin-bottom: 2rem;
+    }
+    
+    .carte_activite_2 img{
+        height: 70%;
+    }
+
+    .carte_activite_3{
+        width: 100%;
+        height: 13rem;
+        margin-bottom: 2rem;
+    }
+    
+    .carte_activite_3 img{
+        height: 70%;
+    }
+    
+    .carte_activite_4{
+        width: 100%;
+        height: 13rem;
+        margin-bottom: 2rem;
+    }
+    
+    .carte_activite_4 img{
+        height: 70%;
+    }
+
+    #groupe4{
+        width: 100%;
+    }
+
+    .carte_activite_5{
+        width: 100%;
+        height: 13rem;
+        margin-bottom: 2rem;
+    }
+    
+    .carte_activite_5 img{
+        height: 70%;
+    }
+
+    .carte_activite_6{
+        width: 100%;
+        height: 13rem;
+        margin-bottom: 2rem;
+    }
+    
+    .carte_activite_6 img{
+        height: 70%;
     }
 
     footer{
         flex-direction: column;
+        padding: 2rem 2rem 2rem 2rem;
         
     }
 
@@ -649,5 +810,49 @@ footer{
         width: auto;
     }
 
+
+}
+
+@media screen and (min-device-width:600px) and (max-device-width:1300px){
+
+    #list_filtre{
+        margin-left: 1rem;
+        line-height: 50px;
+    }
+
+    .title_filtre{
+        font-size: 20px;
+    }
+
+    .item_filtre{
+        border: 3px solid #F2F2F2;
+        margin-bottom: 1rem;
+        font-size: 18px;
+    }
+
+    #section2{
+        flex-direction: column;
+    }
+
+    #container_hebergement{
+        width: 90%;
+        margin-bottom: 3rem;
+    }
+
+    .pop_title_icon{
+        width: 100%;
+    }
+
+    #pop_aside{
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    .pop_card{
+        width: 24rem;
+        height: 10rem;
+    }
 
 }
