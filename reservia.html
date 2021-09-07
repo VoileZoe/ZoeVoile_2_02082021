@@ -15,33 +15,24 @@
     <!--#region [ rgba(150, 0, 150, 0.1) ]-->
     <header>
 
-        <div id="header">
-
-            <div class="logo">
-                <p><img src="images/Reservia.svg" alt="logo reservia" class="icon_reservia" /></p>
-            </div>
-
-            <nav>
-
-                <ul>
-                    <li class="link_heb_act"><a href="#hebergements" class="navitem nav_heb">Hébergements</a></li>
-                    <!--ancre-->
-                    <li class="link_heb_act"><a href="#activites" class="navitem nav_act">Activités</a></li>
-                    <!--ancre-->
-                    <li><a href="#" class="navitem nav_inscrire">S'inscrire</a></li>
-                    <!--lien factice-->
-                </ul>
-
-            </nav>
-
-
-
+        <div class="logo">
+            <p><img src="images/Reservia.svg" alt="logo reservia" class="icon_reservia" /></p>
         </div>
 
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <nav>
 
-        <p class="sub_title">En plein centre ville ou en pleine nature</p>
-        <!--Logo Reservia-->
+            <ul>
+                <li class="link_heb_act"><a href="#hebergements" class="navitem nav_heb">Hébergements</a></li>
+                <!--ancre-->
+                <li class="link_heb_act"><a href="#activites" class="navitem nav_act">Activités</a></li>
+                <!--ancre-->
+            </ul>
+
+            <a href="#" class="navitem nav_inscrire">S'inscrire</a>
+            <!--lien factice-->
+
+        </nav>
+
     </header>
     <!--#endregion-->
 
@@ -49,6 +40,12 @@
 
         <section id="section1">
             <!--#region [ rgba(0, 0, 250, 0.1) ]-->
+
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+
+            <p class="sub_title">En plein centre ville ou en pleine nature</p>
+            <!--Logo Reservia-->
+
             <div id="recherche">
                 <form method="post" action="traitement.php">
                     <!--barre de recherche-->
@@ -91,7 +88,7 @@
                     <figure class="carte_hebergement">
                         <a href="#">
                             <img src="images/auberge_la_cannebiere_min.jpg" alt="Auberge La Cannebière" />
-                            <div>
+                            <div class="text_card_hebergement">
                                 <h3>Auberge La Cannebière</h3>
                                 <p class="prices">Nuit à partir de <strong>25€</strong><br />
                                     <i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i
@@ -106,7 +103,7 @@
                     <figure class="carte_hebergement">
                         <a href="#">
                             <img src="images/hotel_du_port_mini.jpg" alt="Photo Hôtel du port" />
-                            <div>
+                            <div class="text_card_hebergement">
                                 <h3>Hôtel du port</h3>
                                 <p class="prices">Nuit à partir de 52<strong>€</strong><br />
                                     <i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i
@@ -120,7 +117,7 @@
                     <figure class="carte_hebergement">
                         <a href="#">
                             <img src="images/hotel_les_mouettes_mini.jpg" alt="Photo Hôtel Les mouettes" />
-                            <div>
+                            <div class="text_card_hebergement">
                                 <h3>Hôtel Les mouettes</h3>
                                 <p class="prices">Nuit à partir de 76<strong>€</strong><br />
                                     <i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i
@@ -134,7 +131,7 @@
                     <figure class="carte_hebergement">
                         <a href="#">
                             <img src="images/hotel_de_la_mer_mini.jpg" alt="Photo Hôtel de La mer" />
-                            <div>
+                            <div class="text_card_hebergement">
                                 <h3>Hôtel de la mer</h3>
                                 <p class="prices">Nuit à partir de 46<strong>€</strong><br />
                                     <i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i
@@ -148,7 +145,7 @@
                     <figure class="carte_hebergement">
                         <a href="#">
                             <img src="images/auberge_du_panier_mini.jpg" alt="Photo Auberge Le Panier" />
-                            <div>
+                            <div class="text_card_hebergement">
                                 <h3>Auberge Le Panier</h3>
                                 <p class="prices">Nuit à partir de 23<strong>€</strong><br />
                                     <i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i
@@ -162,7 +159,7 @@
                     <figure class="carte_hebergement">
                         <a href="#">
                             <img src="images/hotel_chez_amina_mini.jpg" alt="Photo Hôtel chez Amina" />
-                            <div>
+                            <div class="text_card_hebergement">
                                 <h3>Hôtel chez Amina</h3>
                                 <p class="prices">Nuit à partir de 96<strong>€</strong><br />
                                     <i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i
