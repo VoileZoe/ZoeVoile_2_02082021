@@ -20,17 +20,18 @@ main{
     margin:0 3rem 3rem 3rem;
 }
 
+.icon_reservia{
+    display:block;
+    padding-left: 3rem;
+    padding-top: 1rem;
+}
+
 header ul{
     display: flex;
     list-style-type: none;
     margin: 0 0 0 0;
 }
 
-.icon_reservia{
-    display:block;
-    padding-left: 3rem;
-    padding-top: 1rem;
-}
 
 nav{
     display: flex;
@@ -45,9 +46,6 @@ nav{
     text-decoration: none;
     color: black;
     padding: 30px 10px 0 10px;
-}
-
-.navitem{
     border-top: 2px solid white;
 }
 
@@ -66,6 +64,8 @@ header li :hover{
 .link_inscrire :hover{
     border-top: 2px solid #0065FC;
 }
+
+
 
 header h1{
     font-weight: 600;
@@ -542,9 +542,9 @@ footer{
     }
 
     #list_filtre{
-        width: 90%;
+        width: 100%;
         padding: 0;
-        margin: 1 0 0 0;
+        margin: 1rem 0 0 0;
         line-height: 50px;
     }
 
@@ -696,36 +696,47 @@ footer{
 @media all and (max-width:600px){
 
     header{
+        display: inherit;
         position: relative;
-        padding-bottom: 100px;
+        padding-bottom: 10px;
     }
 
     .icon_reservia{
         padding-left: 2rem;
         padding-top: 0;
         width: 8rem;
-
-    }
-
-    nav ul{
-        position: absolute;
-        left: 1px;
-        top: 100px;
-        width: 100%;
-        padding: 0 0 0 0;
     }
 
     nav{
-        font-size: 20px;
+        flex-direction: column-reverse;
+        align-items: unset;
+        font-size: large;
+    }
+
+    header ul{
+        padding-left: 0;
+    }
+
+    header li{
+        width: 50%;
+        text-align: center;
     }
 
     .navitem{
-        padding: 0 3.4rem 1rem 3.4rem;
+        display: unset;
+        padding: 0;
     }
 
     .nav_inscrire{
-        padding: 0 2rem 0 0 !important;
-        margin-right: 0;
+        position: relative;
+        left: 75%;
+        top: -3rem;
+        font-weight: bold;
+        color: #0065FC;
+        margin-right: 3rem;
+        border-top: 2px solid white;
+        padding: 0;
+        margin: 0;
     }
 
     .link_inscrire :hover{
@@ -733,7 +744,8 @@ footer{
     }
     
     header li :hover{
-        border-top: hidden;    
+        border-top: hidden;  
+ 
     }
 
     .link_heb_act {
@@ -741,7 +753,7 @@ footer{
     }
 
     .link_heb_act :hover{
-        margin-bottom: -5px;
+        width: 100%;
         border-bottom: 5px solid #0065FC;
     }
 
@@ -763,8 +775,10 @@ footer{
     }
 
     #marseille_france {
-        width: 58%;
-        font-size: 20px;
+        width: 50%;
+        height: 1.5rem;
+        font-size: medium;
+        padding: 1.1rem 1.6rem 0.8rem 0.2rem;
     }
 
     .button_recherche{
@@ -804,7 +818,7 @@ footer{
         border: 2px solid #F2F2F2;
         border-radius: 0;
         overflow: hidden;
-        width: 84%;
+        width: 80%;
         padding: 2rem;
     }
 
@@ -818,7 +832,7 @@ footer{
 
     #container_hebergement{
         overflow: hidden;
-        width: 84%;
+        width: 80%;
         background-color: white;
         padding: 2rem;
         margin-bottom: 0;
@@ -841,7 +855,7 @@ footer{
 
     footer{
         flex-direction: column;
-        padding: 2.5rem 0 2.5rem 2.5rem;
+        padding: 2.5rem 2rem 2.5rem 2.5rem;
     }
 
     .footer_category h2{
