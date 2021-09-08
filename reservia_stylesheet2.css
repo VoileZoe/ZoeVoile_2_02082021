@@ -532,7 +532,7 @@ footer{
     line-height: 30px;
 }
 
-@media all and (max-device-width:1390px){
+@media all and (max-width:1390px){
 
 
     .title_filtre{
@@ -586,7 +586,7 @@ footer{
 
 }
 
-@media all and (max-device-width:768px){
+@media all and (max-width:768px){
 
     #pop_aside{
         flex-direction: column;
@@ -693,7 +693,7 @@ footer{
 
 }
 
-@media all and (max-device-width:600px){
+@media all and (max-width:600px){
 
     header{
         position: relative;
