@@ -77,12 +77,12 @@ header h1{
 }
 
 .icon_recherche{
-    border: 2px solid #F2F2F2;
+    
     border-top-left-radius: 1rem; 
     border-bottom-left-radius: 1rem;
     background-color: #F2F2F2;
     width: 1rem;
-    padding: 1.1rem 0.8rem 1rem 1rem;
+    padding: 1.2rem 0.8rem 1.15rem 1rem;
     display: inline-block;
 }
 
@@ -98,10 +98,10 @@ header h1{
 }
 
 .button_recherche{
-    border: 2px solid #0065FC;
+    border: 0px;
     border-top-right-radius: 1rem; 
     border-bottom-right-radius: 1rem;
-    padding: 1.1rem 1rem 0.9rem 1rem;
+    padding: 1.2rem 1rem 1.05rem 1rem;
     background-color: #0065FC;
     color: white;
     font-weight: 600;
@@ -150,17 +150,18 @@ header h1{
 }
 
 .icon{
-    border: 2px solid #DEEBFF;
+    
     border-radius: 50%;
     background-color: #DEEBFF;
     color: #0065FC;
-    width: 3rem;
-    height: 3rem;
+    width: 3.4rem;
+    height: 3.2rem;
     font-size: 20px;
     text-align: center;
     line-height: 48px !important;
-    margin-left: -1.1rem;
+    margin-left: -1.2rem;
     margin-right: 1rem;
+    padding-top: 0.2rem;
 }
 
 #info{
@@ -714,12 +715,19 @@ footer{
     }
 
     header ul{
+        width: 100%;
         padding-left: 0;
     }
 
     header li{
-        width: 50%;
+        width: 100%;
         text-align: center;
+        border-bottom: 4px solid #F2F2F2;
+    }
+
+    header li:hover{
+       
+        border-bottom: 4px solid #0065FC;
     }
 
     .navitem{
@@ -742,19 +750,10 @@ footer{
     .link_inscrire :hover{
         border-top: 2px solid white;
     }
-    
+
     header li :hover{
         border-top: hidden;  
  
-    }
-
-    .link_heb_act {
-        border-bottom: 5px solid #F2F2F2;
-    }
-
-    .link_heb_act :hover{
-        width: 100%;
-        border-bottom: 5px solid #0065FC;
     }
 
     main{
@@ -770,7 +769,7 @@ footer{
     }
 
     .icon_recherche {
-        padding: 1.15rem 0.9rem 1.05rem 1.1rem;
+        padding: 1.2rem 0.9rem 1.15rem 1.1rem;
         font-size: 20px;
     }
 
@@ -800,11 +799,17 @@ footer{
         display: none;
     }
 
+    .icon{
+       height: 3.1rem;
+       padding-top: 0.3rem;
+
+    }
+
     #info{
         font-size: large;
     }
     .fa-info {
-        width: 2rem;
+        width: 30px;
         margin-top: 0.7rem;
     }
 
@@ -815,7 +820,6 @@ footer{
     }
 
     #pop_aside{
-        border: 2px solid #F2F2F2;
         border-radius: 0;
         overflow: hidden;
         width: 80%;
